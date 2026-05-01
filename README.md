@@ -1,5 +1,4 @@
-```markdown
-# Fashion Image Classifier
+#  Fashion Image Classifier
 
 A clothing classification system using **CNN** and **Random Forest**, with an interactive **Streamlit** web app to compare both models in real time.
 
@@ -21,22 +20,16 @@ T-Shirt · Shirt · Dress · Pants · Shoes · Jacket · Sweater · Top
 - **Web App:** Streamlit
 
 ## 🚀 Getting Started
-
 ```bash
 git clone https://github.com/zohaib-mzg/Fashion_Image_Classifier.git
 cd Fashion_Image_Classifier
 pip install -r requirements.txt
 streamlit run app.py
-```
-
-## 📁 Project Structure
-```
 ├── data_preparation.ipynb       # Preprocessing & cleaning
 ├── cnn_training.ipynb           # CNN training & evaluation
 ├── random_forest_training.ipynb # Feature extraction & RF training
 ├── app.py                       # Streamlit web app
 └── requirements.txt
-```
 
 ## 📌 Dataset
 [Fashion Product Images (Small)](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small) — 8,000 images across 8 categories.
@@ -48,6 +41,4 @@ streamlit run app.py
 [MIT](LICENSE)
 ```
 
----
-
-Short, scannable, professional — everything a recruiter or developer needs at a glance. Drop your next project whenever you're ready! 🚀
+## 📁 Project Structure
