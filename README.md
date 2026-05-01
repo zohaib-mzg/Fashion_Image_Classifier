@@ -25,11 +25,16 @@ git clone https://github.com/zohaib-mzg/Fashion_Image_Classifier.git
 cd Fashion_Image_Classifier
 pip install -r requirements.txt
 streamlit run app.py
+```
+
+## 📁 Project Structure
+```
 ├── data_preparation.ipynb       # Preprocessing & cleaning
 ├── cnn_training.ipynb           # CNN training & evaluation
 ├── random_forest_training.ipynb # Feature extraction & RF training
 ├── app.py                       # Streamlit web app
 └── requirements.txt
+```
 
 ## 📌 Dataset
 [Fashion Product Images (Small)](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small) — 8,000 images across 8 categories.
@@ -39,6 +44,3 @@ streamlit run app.py
 
 ## 📄 License
 [MIT](LICENSE)
-```
-
-## 📁 Project Structure
