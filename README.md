@@ -1,40 +1,53 @@
----
+```markdown
+# Fashion Image Classifier
 
-## 🖥️ App Features
+A clothing classification system using **CNN** and **Random Forest**, with an interactive **Streamlit** web app to compare both models in real time.
 
-- 📤 **Upload** any clothing image
-- 🔀 **Switch** between CNN and Random Forest models
-- 📊 **View** confidence scores for all 8 categories
-- 🎨 **See** extracted visual attributes — dominant color, texture, pattern
-- ⚡ **Compare** both models side by side in real time
+## 📊 Model Performance
 
----
+| Metric           | Random Forest | CNN        |
+|------------------|---------------|------------|
+| Test Accuracy    | 87.56%        | 92.25%     |
+| Training Time    | ~10 min       | ~44 min    |
+| Prediction Speed | ~0.1 sec      | ~0.3 sec   |
 
-## 📌 Known Limitations
+## 🗂️ Categories
+T-Shirt · Shirt · Dress · Pants · Shoes · Jacket · Sweater · Top
 
-- Trained on clean product photos — real-world/casual images may reduce accuracy
-- No GPU used during training; transfer learning (ResNet, EfficientNet) not explored
-- Dataset limited to 8 categories — more classes could improve generalization
+## 🛠️ Tech Stack
+- **Deep Learning:** TensorFlow / Keras (Custom CNN)
+- **Machine Learning:** scikit-learn (Random Forest)
+- **Computer Vision:** OpenCV, scikit-image (HOG, LBP)
+- **Web App:** Streamlit
 
----
+## 🚀 Getting Started
 
-## 🔮 Future Improvements
+```bash
+git clone https://github.com/zohaib-mzg/Fashion_Image_Classifier.git
+cd Fashion_Image_Classifier
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-- [ ] Add transfer learning (EfficientNetB0 / MobileNetV2)
-- [ ] Expand to more clothing categories
-- [ ] Deploy on Streamlit Cloud / Hugging Face Spaces
-- [ ] Add image augmentation for better generalization
+## 📁 Project Structure
+```
+├── data_preparation.ipynb       # Preprocessing & cleaning
+├── cnn_training.ipynb           # CNN training & evaluation
+├── random_forest_training.ipynb # Feature extraction & RF training
+├── app.py                       # Streamlit web app
+└── requirements.txt
+```
 
----
+## 📌 Dataset
+[Fashion Product Images (Small)](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small) — 8,000 images across 8 categories.
 
 ## 👨‍💻 Author
+**Muhammad Zohaib** — BS Data Science, FAST-NUCES Lahore
 
-**Muhammad Zohaib**  
-BS Data Science | FAST-NUCES Lahore  
-[![GitHub](https://img.shields.io/badge/GitHub-zohaib--mzg-black?logo=github)](https://github.com/zohaib-mzg)
+## 📄 License
+[MIT](LICENSE)
+```
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to fork and build on it!
+Short, scannable, professional — everything a recruiter or developer needs at a glance. Drop your next project whenever you're ready! 🚀
